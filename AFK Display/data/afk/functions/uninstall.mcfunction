@@ -1,4 +1,4 @@
-# Desc: Sets up scores for the main loop and all other functions
+# Desc: Unistalls AFK
 #
 # Called by: Player
 

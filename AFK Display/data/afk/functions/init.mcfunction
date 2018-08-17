@@ -10,5 +10,3 @@ scoreboard objectives setdisplay list hc_checkAFK
 
 team add hc_afk "AFK Players"
 team modify hc_afk color gray
-
-tellraw @a ["",{"text":"AFK Display ","color":"yellow"},{"text":"intitialised.","color":"green"}]
