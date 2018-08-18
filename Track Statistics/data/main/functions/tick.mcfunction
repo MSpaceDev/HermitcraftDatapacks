@@ -2,17 +2,16 @@
 #
 # Called by: #minecraft:tick
 
-scoreboard players add @e[tag=main_tick] m_tick 1
+scoreboard players add #hc_tick hc_tick 1
 
 # Every tick
-function track_stats:tick
-function wrench:tick
+function #main:tick
 
 # Every 1 second
-execute as @e[tag=main_tick,limit=1,scores={m_tick=1}] at @s run function main:one_second
-execute as @e[tag=main_tick,limit=1,scores={m_tick=21}] at @s run function main:one_second
-execute as @e[tag=main_tick,limit=1,scores={m_tick=41}] at @s run function main:one_second
-execute as @e[tag=main_tick,limit=1,scores={m_tick=61}] at @s run function main:one_second
-execute as @e[tag=main_tick,limit=1,scores={m_tick=81}] at @s run function main:one_second
+execute if score #hc_tick hc_tick matches 1 run function #main:second
+execute if score #hc_tick hc_tick matches 21 run function #main:second
+execute if score #hc_tick hc_tick matches 41 run function #main:second
+execute if score #hc_tick hc_tick matches 61 run function #main:second
+execute if score #hc_tick hc_tick matches 81 run function #main:second
 
-scoreboard players set @e[tag=main_tick,limit=1,scores={m_tick=100..}] m_tick 0
+execute if score #hc_tick hc_tick matches 100.. run scoreboard players set #hc_tick hc_tick 0

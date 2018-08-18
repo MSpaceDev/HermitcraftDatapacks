@@ -10,5 +10,3 @@ scoreboard objectives remove hc_z1
 scoreboard objectives remove hc_z2
 scoreboard objectives remove hc_checkAFK
 team remove hc_afk
-
-tellraw @s ["",{"text":"Uninstalled ","color":"green"},{"text":"AFK Display","color":"yellow"},{"text":" successfully.","color":"green"}]

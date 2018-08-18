@@ -2,5 +2,6 @@
 #
 # Called by: wrench:tick
 
-clear @s knowledge_book
 give @s carrot_on_a_stick{Unbreakable:1,Damage:1,display:{Name:"{\"text\":\"§rWrench\"}"}} 1
+clear @s knowledge_book
+advancement revoke @s only wrench:swap_recipe

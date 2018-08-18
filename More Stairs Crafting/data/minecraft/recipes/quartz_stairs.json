@@ -6,13 +6,11 @@
         "## ",
         "###"
     ],
-  "key": {
-		"#": [
-			{
-				"tag": "minecraft:quartz"
-			}
-		]
-	},
+    "key": {
+        "#": {
+            "tag": "minecraft:quartz"
+        }
+    },
     "result": {
         "item": "minecraft:quartz_stairs",
         "count": 8

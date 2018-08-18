@@ -7,5 +7,3 @@
 #
 scoreboard objectives remove as_trigger
 scoreboard objectives remove as_pose
-
-tellraw @s ["",{"text":"Uninstalled ","color":"green"},{"text":"Customisable Armor Stands","color":"yellow"},{"text":" successfully.","color":"green"}]

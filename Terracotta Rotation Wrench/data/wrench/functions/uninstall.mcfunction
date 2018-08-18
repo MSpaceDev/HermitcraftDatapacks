@@ -4,4 +4,4 @@
 
 scoreboard objectives remove wrench_raycast
 scoreboard objectives remove wrench_use
-scoreboard objectives remove wrench_rotateUp
+scoreboard objectives remove wrench_stopLoop

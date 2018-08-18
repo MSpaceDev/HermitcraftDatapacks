@@ -1,0 +1,18 @@
+{
+    "parent":"minecraft:story/root",
+    "criteria": {
+        "knowledge_book": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:knowledge_book"
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "wrench:swap_recipe"
+    }
+}
