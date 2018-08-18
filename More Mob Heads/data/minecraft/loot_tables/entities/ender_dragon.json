@@ -4,9 +4,17 @@
             "rolls": 1,
             "entries": [
                 {
-                    "type": "item",
-                    "weight": 1,
-                    "name": "minecraft:dragon_head"
+                    "type": "loot_table",
+                    "name": "minecraft:entities/reference/extra/ender_dragon"
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "name": "minecraft:entities/reference/emmh/ender_dragon"
                 }
             ]
         }

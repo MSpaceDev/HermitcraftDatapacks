@@ -1,21 +1,32 @@
-{
-  "pools": [
-    {
+{  
+    "pools":[  
+        {  
+            "rolls":1,
+            "entries":[  
+                {  
+                    "type": "loot_table",
+                    "name": "minecraft:entities/reference/extra/shulker",
+                    "weight": 1
+                }
+            ]
+        },
+        {  
+            "rolls":1,
+            "entries":[  
+                {  
+                    "type": "loot_table",
+                    "name": "minecraft:entities/reference/emmh/shulker",
+                    "weight": 1
+                }
+            ]
+        },
+        {  
             "rolls": 1,
-            "entries": [
-                {
+            "entries":[  
+                {  
                     "type": "item",
                     "name": "minecraft:shulker_shell",
-                    "weight": 1,
-                    "functions": [
-                        {
-                            "function": "set_count",
-                            "count": {
-                                "min": 2,
-                                "max": 2
-                            }
-                        }
-                    ]
+                    "weight": 1
                 }
             ]
         }
