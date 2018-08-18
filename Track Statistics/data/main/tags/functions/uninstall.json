@@ -1,5 +1,6 @@
 {
     "values": [
+        "main:uninstall_message",
         "track_stats:uninstall"
     ]
 }

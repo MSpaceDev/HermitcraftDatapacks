@@ -1,5 +1,6 @@
 {
     "values": [
+        "main:uninstall_message",
         "as_statue:uninstall"
     ]
 }
