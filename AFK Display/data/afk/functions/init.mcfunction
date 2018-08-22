@@ -6,7 +6,5 @@ scoreboard objectives add hc_z1 dummy
 scoreboard objectives add hc_z2 dummy
 scoreboard objectives add hc_checkAFK dummy
 
-scoreboard objectives setdisplay list hc_checkAFK
-
 team add hc_afk "AFK Players"
 team modify hc_afk color gray
