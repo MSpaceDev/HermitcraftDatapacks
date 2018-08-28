@@ -1,0 +1,12 @@
+{
+    "values": [
+		"minecraft:repeater",
+		"minecraft:comparator",
+		"minecraft:observer",
+		"minecraft:dispenser",
+		"minecraft:dropper",
+		"minecraft:hopper",
+        "minecraft:sticky_piston",
+		"minecraft:piston"
+    ]
+}

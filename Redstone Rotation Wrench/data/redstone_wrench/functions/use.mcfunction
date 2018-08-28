@@ -6,9 +6,9 @@
 scoreboard players add @s wrench_raycast 1
 
 # Attempts to find block and place spawner at block location
-execute positioned ^ ^ ^ if block ^ ^ ^ #wrench:glazed_terracotta run function wrench:rotate/glazed_terracotta
+execute positioned ^ ^ ^ if block ^ ^ ^ #redstone_wrench:redstone_component run function redstone_wrench:rotate/redstone_component
 
-execute positioned ^ ^ ^0.1 if score @s wrench_raycast matches 1..50 run function wrench:use
+execute positioned ^ ^ ^0.1 if score @s wrench_raycast matches 1..50 run function redstone_wrench:use
 
 # Resets scores after raycast
 scoreboard players set @s wrench_raycast 0
