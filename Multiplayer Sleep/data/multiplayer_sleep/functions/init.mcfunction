@@ -9,4 +9,4 @@ scoreboard objectives add ms_warn trigger "Warn Sleeping Players"
 
 scoreboard players enable @a ms_warn
 scoreboard players set -1 ms_warnToggle -1
-scoreboard players set #ms_warnToggle ms_warnToggle -1
+scoreboard players set #ms_warnToggle ms_warnToggle 1
