@@ -2,19 +2,47 @@
 #
 # Called by: wrench:use
 
-# Rotates the Repeater
-execute as @s[scores={wrench_stopLoop=..0}] if block ~ ~ ~ repeater[facing=north] run scoreboard players set @s wrench_stopLoop 1
-execute as @s[scores={wrench_stopLoop=..1}] if block ~ ~ ~ repeater[facing=north] run setblock ~ ~ ~ repeater[facing=west]
-execute as @s[scores={wrench_stopLoop=..0}] if block ~ ~ ~ repeater[facing=east] run setblock ~ ~ ~ repeater[facing=north]
-execute as @s[scores={wrench_stopLoop=..0}] if block ~ ~ ~ repeater[facing=south] run setblock ~ ~ ~ repeater[facing=east]
-execute as @s[scores={wrench_stopLoop=..0}] if block ~ ~ ~ repeater[facing=west] run setblock ~ ~ ~ repeater[facing=south]
+# Rotates the Repeater with delay 1
+execute as @s[scores={wrench_stopLoop=..0}] if block ~ ~ ~ repeater[facing=north,delay=1] run scoreboard players set @s wrench_stopLoop 1
+execute as @s[scores={wrench_stopLoop=..1}] if block ~ ~ ~ repeater[facing=north,delay=1] run setblock ~ ~ ~ repeater[facing=west,delay=1]
+execute as @s[scores={wrench_stopLoop=..0}] if block ~ ~ ~ repeater[facing=east,delay=1] run setblock ~ ~ ~ repeater[facing=north,delay=1]
+execute as @s[scores={wrench_stopLoop=..0}] if block ~ ~ ~ repeater[facing=south,delay=1] run setblock ~ ~ ~ repeater[facing=east,delay=1]
+execute as @s[scores={wrench_stopLoop=..0}] if block ~ ~ ~ repeater[facing=west,delay=1] run setblock ~ ~ ~ repeater[facing=south,delay=1]
 
-# Rotates the Comparator
-execute as @s[scores={wrench_stopLoop=..0}] if block ~ ~ ~ comparator[facing=north] run scoreboard players set @s wrench_stopLoop 1
-execute as @s[scores={wrench_stopLoop=..1}] if block ~ ~ ~ comparator[facing=north] run setblock ~ ~ ~ comparator[facing=west]
-execute as @s[scores={wrench_stopLoop=..0}] if block ~ ~ ~ comparator[facing=east] run setblock ~ ~ ~ comparator[facing=north]
-execute as @s[scores={wrench_stopLoop=..0}] if block ~ ~ ~ comparator[facing=south] run setblock ~ ~ ~ comparator[facing=east]
-execute as @s[scores={wrench_stopLoop=..0}] if block ~ ~ ~ comparator[facing=west] run setblock ~ ~ ~ comparator[facing=south]
+# Rotates the Repeater with delay 2
+execute as @s[scores={wrench_stopLoop=..0}] if block ~ ~ ~ repeater[facing=north,delay=2] run scoreboard players set @s wrench_stopLoop 1
+execute as @s[scores={wrench_stopLoop=..1}] if block ~ ~ ~ repeater[facing=north,delay=2] run setblock ~ ~ ~ repeater[facing=west,delay=2]
+execute as @s[scores={wrench_stopLoop=..0}] if block ~ ~ ~ repeater[facing=east,delay=2] run setblock ~ ~ ~ repeater[facing=north,delay=2]
+execute as @s[scores={wrench_stopLoop=..0}] if block ~ ~ ~ repeater[facing=south,delay=2] run setblock ~ ~ ~ repeater[facing=east,delay=2]
+execute as @s[scores={wrench_stopLoop=..0}] if block ~ ~ ~ repeater[facing=west,delay=2] run setblock ~ ~ ~ repeater[facing=south,delay=2]
+
+# Rotates the Repeater with delay 3
+execute as @s[scores={wrench_stopLoop=..0}] if block ~ ~ ~ repeater[facing=north,delay=3] run scoreboard players set @s wrench_stopLoop 1
+execute as @s[scores={wrench_stopLoop=..1}] if block ~ ~ ~ repeater[facing=north,delay=3] run setblock ~ ~ ~ repeater[facing=west,delay=3]
+execute as @s[scores={wrench_stopLoop=..0}] if block ~ ~ ~ repeater[facing=east,delay=3] run setblock ~ ~ ~ repeater[facing=north,delay=3]
+execute as @s[scores={wrench_stopLoop=..0}] if block ~ ~ ~ repeater[facing=south,delay=3] run setblock ~ ~ ~ repeater[facing=east,delay=3]
+execute as @s[scores={wrench_stopLoop=..0}] if block ~ ~ ~ repeater[facing=west,delay=3] run setblock ~ ~ ~ repeater[facing=south,delay=3]
+
+# Rotates the Repeater with delay 4
+execute as @s[scores={wrench_stopLoop=..0}] if block ~ ~ ~ repeater[facing=north,delay=4] run scoreboard players set @s wrench_stopLoop 1
+execute as @s[scores={wrench_stopLoop=..1}] if block ~ ~ ~ repeater[facing=north,delay=4] run setblock ~ ~ ~ repeater[facing=west,delay=4]
+execute as @s[scores={wrench_stopLoop=..0}] if block ~ ~ ~ repeater[facing=east,delay=4] run setblock ~ ~ ~ repeater[facing=north,delay=4]
+execute as @s[scores={wrench_stopLoop=..0}] if block ~ ~ ~ repeater[facing=south,delay=4] run setblock ~ ~ ~ repeater[facing=east,delay=4]
+execute as @s[scores={wrench_stopLoop=..0}] if block ~ ~ ~ repeater[facing=west,delay=4] run setblock ~ ~ ~ repeater[facing=south,delay=4]
+
+# Rotates the Comparator with mode subtract
+execute as @s[scores={wrench_stopLoop=..0}] if block ~ ~ ~ comparator[facing=north,mode=subtract] run scoreboard players set @s wrench_stopLoop 1
+execute as @s[scores={wrench_stopLoop=..1}] if block ~ ~ ~ comparator[facing=north,mode=subtract] run setblock ~ ~ ~ comparator[facing=west,mode=subtract]
+execute as @s[scores={wrench_stopLoop=..0}] if block ~ ~ ~ comparator[facing=east,mode=subtract] run setblock ~ ~ ~ comparator[facing=north,mode=subtract]
+execute as @s[scores={wrench_stopLoop=..0}] if block ~ ~ ~ comparator[facing=south,mode=subtract] run setblock ~ ~ ~ comparator[facing=east,mode=subtract]
+execute as @s[scores={wrench_stopLoop=..0}] if block ~ ~ ~ comparator[facing=west,mode=subtract] run setblock ~ ~ ~ comparator[facing=south,mode=subtract]
+
+# Rotates the Comparator with mode compare
+execute as @s[scores={wrench_stopLoop=..0}] if block ~ ~ ~ comparator[facing=north,mode=compare] run scoreboard players set @s wrench_stopLoop 1
+execute as @s[scores={wrench_stopLoop=..1}] if block ~ ~ ~ comparator[facing=north,mode=compare] run setblock ~ ~ ~ comparator[facing=west,mode=compare]
+execute as @s[scores={wrench_stopLoop=..0}] if block ~ ~ ~ comparator[facing=east,mode=compare] run setblock ~ ~ ~ comparator[facing=north,mode=compare]
+execute as @s[scores={wrench_stopLoop=..0}] if block ~ ~ ~ comparator[facing=south,mode=compare] run setblock ~ ~ ~ comparator[facing=east,mode=compare]
+execute as @s[scores={wrench_stopLoop=..0}] if block ~ ~ ~ comparator[facing=west,mode=compare] run setblock ~ ~ ~ comparator[facing=south,mode=compare]
 
 # Rotates the Piston
 execute as @s[scores={wrench_stopLoop=..0}] if block ~ ~ ~ piston[facing=north] run scoreboard players set @s wrench_stopLoop 1
