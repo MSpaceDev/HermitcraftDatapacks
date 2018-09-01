@@ -14,5 +14,6 @@
     "result": {
         "item": "minecraft:fire_coral_block",
         "count": 1
-    }
+    },
+	"group": "coral_blocks"
 }

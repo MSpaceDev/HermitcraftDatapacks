@@ -1,0 +1,44 @@
+{
+	"parent": "minecraft:recipes/root",
+	"criteria": {
+		"has_quartz_slab": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:quartz_slab"
+					}
+				]
+			}
+		},
+		"has_smooth_quartz": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:smooth_quartz"
+					}
+				]
+			}
+		},
+		"has_the_recipe": {
+			"trigger": "minecraft:recipe_unlocked",
+			"conditions": {
+				"recipe": "minecraft:slabs/smooth_quartz"
+			}
+		}
+	},
+	"requirements": [
+		[
+			"has_quartz_slab",
+			"has_smooth_quartz",
+			"has_the_recipe"
+		]
+	],
+	"rewards": {
+		"recipes": [
+			"minecraft:slabs/smooth_quartz",
+			"minecraft:slabs/quartz_slab"
+		]
+	}
+}
