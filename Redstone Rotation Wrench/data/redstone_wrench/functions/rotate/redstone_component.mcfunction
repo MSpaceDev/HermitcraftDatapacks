@@ -65,22 +65,24 @@ execute as @s[scores={wrench_stopLoop=..0}] if block ~ ~ ~ sticky_piston[facing=
 execute if block ~ ~ ~ sticky_piston run fill ~-1 ~-1 ~-1 ~1 ~1 ~1 air replace piston_head
 
 # Rotates the Dropper
-execute as @s[scores={wrench_stopLoop=..0}] if block ~ ~ ~ dropper[facing=north] run scoreboard players set @s wrench_stopLoop 1
-execute as @s[scores={wrench_stopLoop=..1}] if block ~ ~ ~ dropper[facing=north] run setblock ~ ~ ~ dropper[facing=west]
-execute as @s[scores={wrench_stopLoop=..0}] if block ~ ~ ~ dropper[facing=east] run setblock ~ ~ ~ dropper[facing=north]
-execute as @s[scores={wrench_stopLoop=..0}] if block ~ ~ ~ dropper[facing=south] run setblock ~ ~ ~ dropper[facing=east]
-execute as @s[scores={wrench_stopLoop=..0}] if block ~ ~ ~ dropper[facing=up] run setblock ~ ~ ~ dropper[facing=south]
-execute as @s[scores={wrench_stopLoop=..0}] if block ~ ~ ~ dropper[facing=down] run setblock ~ ~ ~ dropper[facing=up]
-execute as @s[scores={wrench_stopLoop=..0}] if block ~ ~ ~ dropper[facing=west] run setblock ~ ~ ~ dropper[facing=down]
+execute as @s[scores={wrench_stopLoop=..0}] if block ~ ~ ~ dropper[facing=north]{Items:[]} run scoreboard players set @s wrench_stopLoop 1
+execute as @s[scores={wrench_stopLoop=..1}] if block ~ ~ ~ dropper[facing=north]{Items:[]} run setblock ~ ~ ~ dropper[facing=west]
+execute as @s[scores={wrench_stopLoop=..0}] if block ~ ~ ~ dropper[facing=east]{Items:[]} run setblock ~ ~ ~ dropper[facing=north]
+execute as @s[scores={wrench_stopLoop=..0}] if block ~ ~ ~ dropper[facing=south]{Items:[]} run setblock ~ ~ ~ dropper[facing=east]
+execute as @s[scores={wrench_stopLoop=..0}] if block ~ ~ ~ dropper[facing=up]{Items:[]} run setblock ~ ~ ~ dropper[facing=south]
+execute as @s[scores={wrench_stopLoop=..0}] if block ~ ~ ~ dropper[facing=down]{Items:[]} run setblock ~ ~ ~ dropper[facing=up]
+execute as @s[scores={wrench_stopLoop=..0}] if block ~ ~ ~ dropper[facing=west]{Items:[]} run setblock ~ ~ ~ dropper[facing=down]
+execute as @s if block ~ ~ ~ dropper unless block ~ ~ ~ dropper{Items:[]} run title @s actionbar ["",{"text":"You cannot rotate block with items inside!","color":"red"}]
 
 # Rotates the Dispenser
-execute as @s[scores={wrench_stopLoop=..0}] if block ~ ~ ~ dispenser[facing=north] run scoreboard players set @s wrench_stopLoop 1
-execute as @s[scores={wrench_stopLoop=..1}] if block ~ ~ ~ dispenser[facing=north] run setblock ~ ~ ~ dispenser[facing=west]
-execute as @s[scores={wrench_stopLoop=..0}] if block ~ ~ ~ dispenser[facing=east] run setblock ~ ~ ~ dispenser[facing=north]
-execute as @s[scores={wrench_stopLoop=..0}] if block ~ ~ ~ dispenser[facing=south] run setblock ~ ~ ~ dispenser[facing=east]
-execute as @s[scores={wrench_stopLoop=..0}] if block ~ ~ ~ dispenser[facing=up] run setblock ~ ~ ~ dispenser[facing=south]
-execute as @s[scores={wrench_stopLoop=..0}] if block ~ ~ ~ dispenser[facing=down] run setblock ~ ~ ~ dispenser[facing=up]
-execute as @s[scores={wrench_stopLoop=..0}] if block ~ ~ ~ dispenser[facing=west] run setblock ~ ~ ~ dispenser[facing=down]
+execute as @s[scores={wrench_stopLoop=..0}] if block ~ ~ ~ dispenser[facing=north]{Items:[]} run scoreboard players set @s wrench_stopLoop 1
+execute as @s[scores={wrench_stopLoop=..1}] if block ~ ~ ~ dispenser[facing=north]{Items:[]} run setblock ~ ~ ~ dispenser[facing=west]
+execute as @s[scores={wrench_stopLoop=..0}] if block ~ ~ ~ dispenser[facing=east]{Items:[]} run setblock ~ ~ ~ dispenser[facing=north]
+execute as @s[scores={wrench_stopLoop=..0}] if block ~ ~ ~ dispenser[facing=south]{Items:[]} run setblock ~ ~ ~ dispenser[facing=east]
+execute as @s[scores={wrench_stopLoop=..0}] if block ~ ~ ~ dispenser[facing=up]{Items:[]} run setblock ~ ~ ~ dispenser[facing=south]
+execute as @s[scores={wrench_stopLoop=..0}] if block ~ ~ ~ dispenser[facing=down]{Items:[]} run setblock ~ ~ ~ dispenser[facing=up]
+execute as @s[scores={wrench_stopLoop=..0}] if block ~ ~ ~ dispenser[facing=west]{Items:[]} run setblock ~ ~ ~ dispenser[facing=down]
+execute as @s if block ~ ~ ~ dispenser unless block ~ ~ ~ dispenser{Items:[]} run title @s actionbar ["",{"text":"You cannot rotate block with items inside!","color":"red"}]
 
 # Rotates the Observer
 execute as @s[scores={wrench_stopLoop=..0}] if block ~ ~ ~ observer[facing=north] run scoreboard players set @s wrench_stopLoop 1
@@ -92,12 +94,13 @@ execute as @s[scores={wrench_stopLoop=..0}] if block ~ ~ ~ observer[facing=down]
 execute as @s[scores={wrench_stopLoop=..0}] if block ~ ~ ~ observer[facing=west] run setblock ~ ~ ~ observer[facing=down]
 
 # Rotates the Hopper
-execute as @s[scores={wrench_stopLoop=..0}] if block ~ ~ ~ hopper[facing=north] run scoreboard players set @s wrench_stopLoop 1
-execute as @s[scores={wrench_stopLoop=..1}] if block ~ ~ ~ hopper[facing=north] run setblock ~ ~ ~ hopper[facing=west]
-execute as @s[scores={wrench_stopLoop=..0}] if block ~ ~ ~ hopper[facing=east] run setblock ~ ~ ~ hopper[facing=north]
-execute as @s[scores={wrench_stopLoop=..0}] if block ~ ~ ~ hopper[facing=south] run setblock ~ ~ ~ hopper[facing=east]
-execute as @s[scores={wrench_stopLoop=..0}] if block ~ ~ ~ hopper[facing=down] run setblock ~ ~ ~ hopper[facing=south]
-execute as @s[scores={wrench_stopLoop=..0}] if block ~ ~ ~ hopper[facing=west] run setblock ~ ~ ~ hopper[facing=down]
+execute as @s[scores={wrench_stopLoop=..0}] if block ~ ~ ~ hopper[facing=north]{Items:[]} run scoreboard players set @s wrench_stopLoop 1
+execute as @s[scores={wrench_stopLoop=..1}] if block ~ ~ ~ hopper[facing=north]{Items:[]} run setblock ~ ~ ~ hopper[facing=west]
+execute as @s[scores={wrench_stopLoop=..0}] if block ~ ~ ~ hopper[facing=east]{Items:[]} run setblock ~ ~ ~ hopper[facing=north]
+execute as @s[scores={wrench_stopLoop=..0}] if block ~ ~ ~ hopper[facing=south]{Items:[]} run setblock ~ ~ ~ hopper[facing=east]
+execute as @s[scores={wrench_stopLoop=..0}] if block ~ ~ ~ hopper[facing=down]{Items:[]} run setblock ~ ~ ~ hopper[facing=south]
+execute as @s[scores={wrench_stopLoop=..0}] if block ~ ~ ~ hopper[facing=west]{Items:[]} run setblock ~ ~ ~ hopper[facing=down]
+execute as @s if block ~ ~ ~ hopper unless block ~ ~ ~ hopper{Items:[]} run title @s actionbar ["",{"text":"You cannot rotate block with items inside!","color":"red"}]
 
 scoreboard players set @s wrench_stopLoop 0
 scoreboard players set @s wrench_raycast 0
