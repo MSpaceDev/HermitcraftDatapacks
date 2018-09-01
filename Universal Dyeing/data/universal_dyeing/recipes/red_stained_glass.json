@@ -16,5 +16,6 @@
     "result": {
         "item": "minecraft:red_stained_glass",
         "count": 8
-    }
+    },
+    "group": "universal_dyeing_stained_glass"
 }

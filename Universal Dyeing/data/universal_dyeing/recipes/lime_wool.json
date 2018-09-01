@@ -4,6 +4,7 @@
         "item": "minecraft:lime_wool",
         "count": 1
     },
+    "group": "universal_dyeing_wool",
     "ingredients": [
         {
             "tag": "wool"
