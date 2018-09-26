@@ -1,7 +1,7 @@
 # Sorts items into minecraft hoppers above the world
 
 # Spawn 8 hopper minecarts recursively
-scoreboard players set @s pg_hoppers 8
+scoreboard players set @s pg_hoppers 9
 function player_graves:create_minecarts
 execute align xz run summon area_effect_cloud ~0.5 ~300 ~0.5 {Duration:2147483647,Particle:"underwater",Tags:["pg_graveItems"],Radius:0.5}
 
