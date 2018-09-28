@@ -12,3 +12,5 @@ scoreboard objectives add pg_z dummy "Death Z"
 
 scoreboard objectives add pg_deathToggle dummy "Toggle trigger -1"
 scoreboard players set #pg_deathToggle pg_deathToggle -1
+
+scoreboard objectives add pg_id dummy "Grave ID"
