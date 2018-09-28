@@ -6,6 +6,8 @@ function player_graves:create_minecarts
 execute align xz run summon area_effect_cloud ~0.5 ~300 ~0.5 {Duration:2147483647,Particle:"underwater",Tags:["pg_graveItems"],Radius:0.5}
 execute align xz positioned ~0.5 ~300 ~0.5 run scoreboard players operation @e[tag=pg_graveItems,distance=..2,limit=1,sort=nearest] pg_id = @s pg_id
 
+say grave made
+
 # Tags items and move them above hopper minecarts
 tag @e[type=minecraft:item,nbt={Age:0s}] add pg_graveItem
 
