@@ -1,0 +1,27 @@
+# Everything you should know about this pack:
+
+1. If you want to become the tagger, run this command:
+	/function tag:become_tagger
+
+2. If you want someone else to be the tagger, run this command:
+	/execute as <player_name> run function tag:become_tagger
+
+3. The "tag:become_tagger" function will make anyone else on the server get cleared from their tag role, and the new, selected player will be tagged. This is a manual way to tag someone, either initially, or anytime during the game.
+
+4. To tag another player, hold the "Tag!" nametag and hit the player
+
+5. When a player is tagged, a few things will happen:
+	- Their name will be red
+	- They will receive the "Tag!" item
+	- If their inventory is full, the item will drop at their feet (Their responsibilty to pick it up)
+	- The tagger will have the nametag remove from their inventory and removed from the team
+	- A message will be relayed to everyone to say who has been tagged
+
+6. You can toggle tag messages to be relayed, on and off
+	/trigger tg_tagMessages
+
+7. You CANNOT tag an AFK player. The "AFK Display" datapack must be installed for this to work at all. A message will be relayed to the tagger that they cannot tag an AFK player. This message will only display once, as when the player is hit, their location changes, and thus they are not AFK anymore. There is no way around this.
+
+8. A tagged player CANNOT go AFK.
+
+9. There is a score called "tg_timesTagged" which is a list of all players that have been tagged, as well as the amount of times they have been tagged over the course of the game. The function "tag:become_tagger" increments the players "tg_timesTagged" value as well.
