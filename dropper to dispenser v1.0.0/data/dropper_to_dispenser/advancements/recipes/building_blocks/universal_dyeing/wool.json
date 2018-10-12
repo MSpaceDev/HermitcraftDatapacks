@@ -1,0 +1,36 @@
+{
+    "parent": "minecraft:recipes/root",
+    "criteria": {
+        "has_bow": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:bow"
+                    }
+                ]
+            }
+        },
+        "has_block": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:dropper"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "has_block",
+			"has_bow"
+        ]
+    ],
+    "rewards": {
+        "recipes": [
+            "dropper_to_dispenser:dispenser"
+        ]
+    }
+}
