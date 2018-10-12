@@ -1,5 +1,8 @@
 # Everything you should know about this pack:
 
-1. 
-2.
-3.
+1. When commands are triggered, the player will get coords for the opposite dimension. Nether or Overworld
+	e.g. Nether: ( X:48 | Y:64 | Z:-16)
+
+2. Commands:
+	/trigger nc_inOverworld
+	/trigger nc_inNether

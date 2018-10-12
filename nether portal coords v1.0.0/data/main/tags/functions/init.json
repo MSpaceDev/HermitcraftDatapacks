@@ -1,5 +1,6 @@
 {
     "values": [
-        "main:init"
+        "main:init",
+		"nether_portal_coords:init"
     ]
 }
