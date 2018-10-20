@@ -1,7 +1,10 @@
 # Controls everything to do with Player Graves
 
+# Stores age of items in a scoreboard
+execute as @e[type=minecraft:item] at @s run function player_graves:store_age
+
 # If a player dies, sort the items into hopper minecw arts
-execute as @a[scores={pg_death=1..}] at @s if entity @e[type=minecraft:item,distance=..2,nbt={Age:0s}] run function player_graves:get_grave_pos
+execute as @a[scores={pg_death=1..}] at @s if entity @e[type=minecraft:item,distance=..2,scores={pg_itemAge=0..1}] run function player_graves:get_grave_pos
 
 # If a hopper minecart exists, teleport all grave items above it
 execute as @e[type=minecraft:hopper_minecart,tag=pg_hopper] at @s run tp @e[type=minecraft:item,tag=pg_graveItem] ~ ~1 ~
@@ -21,5 +24,4 @@ execute as @a[scores={pg_joinedServer=..1}] at @s run function player_graves:set
 
 # Reset player death after everything is run
 scoreboard players set @a[scores={pg_death=1..}] pg_death 0
-
 tag @a remove pg_illegalPos

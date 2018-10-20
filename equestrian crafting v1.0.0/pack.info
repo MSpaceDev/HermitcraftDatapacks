@@ -1,0 +1,13 @@
+# Everything you should know about this pack:
+
+1. Adds ability to craft horse armour
+
+2. Crafting recipe:
+[
+	"  #",
+	"###",
+	"#_#"
+]
+
+# = Ingot of armour (iron, gold, dimaond)
+_ = Saddle

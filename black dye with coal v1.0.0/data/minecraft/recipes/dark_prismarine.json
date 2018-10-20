@@ -1,0 +1,19 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    "SSS",
+    "SIS",
+    "SSS"
+  ],
+  "key": {
+    "S": {
+      "item": "minecraft:prismarine_shard"
+    },
+    "I": {
+      "tag": "black_dye_with_coal:black_dye"
+    }
+  },
+  "result": {
+    "item": "minecraft:dark_prismarine"
+  }
+}

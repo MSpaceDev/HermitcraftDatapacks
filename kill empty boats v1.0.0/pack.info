@@ -1,0 +1,8 @@
+# Everything you should know about this pack:
+
+1. Allows the player to run a command to kill all loaded empty boats
+
+2. If a player has a RootVehicle as a boat, that boat will not be killed
+
+3. Command:
+	/trigger kb_killEmptyBoat

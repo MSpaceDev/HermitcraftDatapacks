@@ -1,0 +1,15 @@
+{
+  "type": "crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "black_dye_with_coal:black_dye"
+    },
+    {
+      "item": "minecraft:bone_meal"
+    }
+  ],
+  "result": {
+    "item": "minecraft:gray_dye",
+    "count": 2
+  }
+}

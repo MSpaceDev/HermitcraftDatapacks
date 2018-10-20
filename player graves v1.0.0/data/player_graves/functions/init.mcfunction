@@ -3,6 +3,7 @@
 scoreboard objectives add pg_death deathCount "Player Deaths"
 scoreboard objectives add pg_hoppers dummy "Hopper Count"
 scoreboard objectives add pg_sneak minecraft.custom:minecraft.sneak_time "Sneak"
+scoreboard objectives add pg_itemAge dummy "Item Age"
 
 scoreboard objectives add pg_joinedServer minecraft.custom:minecraft.play_one_minute "Play Time"
 scoreboard objectives add pg_deathMessage trigger "Death Trigger"

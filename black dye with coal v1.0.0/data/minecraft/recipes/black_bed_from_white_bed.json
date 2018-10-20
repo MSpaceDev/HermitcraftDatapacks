@@ -1,0 +1,15 @@
+{
+  "type": "crafting_shapeless",
+  "group": "dyed_bed",
+  "ingredients": [
+    {
+      "item": "minecraft:white_bed"
+    },
+    {
+      "tag": "black_dye_with_coal:black_dye"
+    }
+  ],
+  "result": {
+    "item": "minecraft:black_bed"
+  }
+}
