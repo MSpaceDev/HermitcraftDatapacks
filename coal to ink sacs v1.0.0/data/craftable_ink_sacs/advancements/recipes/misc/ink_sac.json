@@ -1,0 +1,43 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "craftable_ink_sacs:ink_sac"
+    ]
+  },
+  "criteria": {
+    "has_coal": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:coal"
+          }
+        ]
+      }
+    },
+    "has_charcoal": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:charcoal"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "craftable_ink_sacs:ink_sac"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_coal",
+      "has_charcoal",
+      "has_the_recipe"
+    ]
+  ]
+}
