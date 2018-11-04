@@ -13,9 +13,6 @@ execute as @e[type=minecraft:hopper_minecart,tag=pg_hopper] at @s run tp @e[type
 execute as @a[scores={pg_sneak=1..}] at @s align xz positioned ~0.5 ~ ~0.5 if score @e[type=minecraft:area_effect_cloud,tag=pg_grave,distance=..0.25,dx=0,sort=nearest,limit=1] pg_id = @s pg_id run function player_graves:check_claim
 scoreboard players set @a pg_sneak 0
 
-# Put a piece of podzol under grave it the block is air or the block is broken
-execute as @e[type=minecraft:area_effect_cloud,tag=pg_grave] at @s run function player_graves:create_podzol
-
 # Toggle death message
 execute as @a at @s unless entity @s[scores={pg_deathMessage=0}] run function player_graves:toggle_death_message
 

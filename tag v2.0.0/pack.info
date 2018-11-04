@@ -1,5 +1,29 @@
 # Everything you should know about this pack:
 
+### UPDATE v2.0.0 [The tag delay update]
+
+1. The pack comes with a trigger help, to allow players to paste commands into there chat as a template!
+		/trigger tg_help
+
+2. When the pack is loaded up, there will be default values set:
+		- The cooldown will be set to 5 minutes
+		- The cooldown starts as 0, so players can tag eachother immediately after pack is installed
+		- After pack is installed, /reload will NOT reset cooldown timer. Game continues as normal (good thing)
+
+3. The minutes of the cooldown is configurable! (command found in help screen too)
+		/scoreboard players set #tg_tagCooldown tg_tagCooldown <minutes>
+			e.g. [for 3 minutes] /scoreboard players set #tg_tagCooldown tg_tagCooldown 3
+
+4. The cooldown can be toggled off: (command found in help screen too)
+		/trigger tg_cooldown
+
+
+
+###
+###
+### UPDATE v1.0.0 [Base update]
+
+
 1. If you want to become the tagger, run this command:
 	/function tag:become_tagger
 
@@ -18,7 +42,7 @@
 	- A message will be relayed to everyone to say who has been tagged
 
 6. You can toggle tag messages to be relayed, on and off
-	/trigger tg_tagMessages
+	/trigger tg_messages
 
 7. You CANNOT tag an AFK player. The "AFK Display" datapack must be installed for this to work at all. A message will be relayed to the tagger that they cannot tag an AFK player. This message will only display once, as when the player is hit, their location changes, and thus they are not AFK anymore. There is no way around this.
 
