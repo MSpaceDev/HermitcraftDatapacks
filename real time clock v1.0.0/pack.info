@@ -1,0 +1,13 @@
+# Everything you should know about this pack:
+
+1. As soon as this pack is installed, the clock will begin timing
+2. If the player has been playing on the world for some time, they can add or remove hours to start the timer approximately where it should be
+3. This pack comes with a trigger help, has 5 options:
+		- /trigger rc_help
+		
+4. The player can run a trigger to display the play hours in chat
+		- /trigger rc_display
+
+5. Commands:
+		/scoreboard players add #rc_hours rc_hours <hours>
+		/scoreboard players remove #rc_hours rc_hours <hours>

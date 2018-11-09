@@ -1,0 +1,6 @@
+{
+    "values": [
+        "main:init",
+				"real_clock:init"
+    ]
+}

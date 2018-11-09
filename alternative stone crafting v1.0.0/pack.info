@@ -1,0 +1,23 @@
+# Everything you should know about this pack:
+
+1. Adds the ability to use other stones with crafting recipes that don't require a specific stone.
+e.g. For the furnace, but not stone slabs.
+
+2. Recipes affected by this change:
+brewing_stand
+comparator
+diorite
+dispenser
+dropper
+furnace
+lever
+observer
+piston
+repeater
+stone_axe
+stone_pickaxe
+stone_sword
+stone_hoe
+stone_shovel
+stone_button
+stone_pressure_plate

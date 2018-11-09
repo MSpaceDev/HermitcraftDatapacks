@@ -1,0 +1,11 @@
+{
+  "type": "crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "alt_stone:stone"
+    }
+  ],
+  "result": {
+    "item": "minecraft:stone_button"
+  }
+}
