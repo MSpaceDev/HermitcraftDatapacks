@@ -22,3 +22,4 @@ execute as @a[scores={pg_joinedServer=..1}] at @s run function player_graves:set
 # Reset player death after everything is run
 scoreboard players set @a[scores={pg_death=1..}] pg_death 0
 tag @a remove pg_illegalPos
+tag @a remove pg_illegalPosUp

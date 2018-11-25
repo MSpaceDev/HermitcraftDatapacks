@@ -1,0 +1,30 @@
+# Everything you should know about this pack:
+
+UPDATE v1.0.0 [Base datapack]
+
+1. The pack comes with a help function, once again
+		- /trigger ia_help
+
+2. The data point is green when its tracking, and red when it is not. All output goes to chat.
+
+3. You can set the duration that a data point must be tracked. Longer track time = more accurate result
+
+4. You must place a data point, and the start tracking. All items that flow through will be counted.
+
+5. If items are stacked, the amount inside the stack will be accounted for.
+	 e.g. System will add 3 items when a stack of 3 items passes by
+
+6. The calculation is merely an estimate, and does not reflect the exact value. For example:
+	 If your farm is performing well at the point of tracking, your average will be higher.
+	 If your farm is performing badly at the point of tracking, your average will be lower
+
+
+UPDATE v1.1.0 [Real-time updates!]
+
+1. You can now see real-time stats and set the interval of when they update!
+		- /scoreboard objectives setdisplay sidebar ia_averageItems
+		- "Set interval" command in help menu!
+
+2. If you start tracking items, you can stop tracking in 2 ways:
+		- Use the help menu command "Remove data point"
+		- Place another data point elsewhere
