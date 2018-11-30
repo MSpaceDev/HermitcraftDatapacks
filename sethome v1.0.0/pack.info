@@ -1,5 +1,14 @@
 # Everything you should know about this pack:
 
-1. 
-2.
-3.
+1. You cannot go to home, until you have first set a home
+
+2. This pack has a help feature: `/trigger sh_help`
+
+3. Commands used to sethome and go home
+		/trigger sethome
+		/trigger home
+
+4. You cannot set your home at 0 0 0. It will be moved to 0 0 1. A message displays this.
+		(Impossible to set a home at  0 0 0 due to bedrock, but the feature is there)
+
+5. A message will tell you that you cannot goto a home until you have set one

@@ -1,6 +1,6 @@
 {
-    "values": [
-        "main:uninstall_message",
-        "namespace:uninstall"
-    ]
+  "values": [
+    "main:uninstall_message",
+    "sh:uninstall"
+  ]
 }

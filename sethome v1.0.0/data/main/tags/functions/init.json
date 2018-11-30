@@ -1,5 +1,6 @@
 {
-    "values": [
-        "main:init"
-    ]
+  "values": [
+    "main:init",
+    "sh:init"
+  ]
 }
