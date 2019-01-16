@@ -1,0 +1,16 @@
+# Everything you should know about this pack:
+
+1. This pack comes with a help function to tell players what to do
+	`/trigger ts_help`
+
+TO CREATE:
+2. Place a armour stand in location of 1x1 detection area
+3. Run function "/function ts:create_thunder_shrine" within 3 blocks of any armour stand
+4. The nearest armour stand within 3 blocks will be the location of the new shrine
+
+TO REMOVE:
+5. To delete a shrine, stand within 3 blocks of it and run `/function ts:remove_thunder_shrine`
+
+NOTE:
+6. If you Ctrl+Throw a stack of nether stars into the shrine, nothing will happen.
+					ONLY 1 NETHER STAR IS ACCEPTED!
